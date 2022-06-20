@@ -219,4 +219,60 @@
     \end{equation*}
 
     Y los puntos del círculo son los únicos para los cuales se cumple \(\vb{a} \in \ell_{\vb{a}}\).
+
+    \section{Elipses}
+
+    Las \textcolor{blue}{elipses} son el lugar geométrico de los puntos cuya suma de distancias a dos fijos llamados \textcolor{blue}{focos}  es constante. De tal manera que una elipse \(\mathcal{E}\) queda determinada por la ecuación 
+
+    \begin{equation*}
+        \textrm{d}(\vb{x}, \vb{p}) + \textrm{d}(\vb{x}, \vb{q}) = 2a,
+    \end{equation*}
+
+    donde \(\vb{p}\) y \(\vb{q}\) son los focos y \(a\) es una constaste positiva, llamada \textcolor{blue}{semieje mayor}, tal que \(2a > \textrm{d}(\vb{p}, \vb{q})\).
+
+    Incluimos el coeficiente \(2\) en la constante para que quede claro que si los focos coinciden, \(\vb{p} = \vb{q}\); entonces se obtiene un círculo de radio \(a\) y centro en el foco; así que los círculos son elipses muy especiales.
+
+    Supongamos que el \textcolor{blue}{centro} de la elipse \(\mathcal{E}\), \emph{i.e.}, el punto medio entre los focos, está en el origen y que además los focos están en el eje \(x\). Entonces tenemos que \(\vb{p} = (c, 0)\) y \(\vb{q} = (-c, 0)\), para alguna \(c\) tal que \(0 < c < a\) (donde ya suponemos que la elipse no es círculo al pedir \(0 < c\)). Es fácil ver entonces que la intersección de \(\mathcal{E}\) con el eje \(x\) consiste en los puntos \((a, 0)\) y \((-a, 0)\), pues la ecuación anterior para puntos \((x, 0)\) es 
+
+    \begin{equation*}
+        \abs{\vb{x} - \vb{c}} + \abs{\vb{x} + \vb{c}} = 2a,
+    \end{equation*}
+
+    que solo tiene las soluciones \(x = a\) y \(x = -a\), y de ahí el ombre de \textcolor{blue}{semieje mayor} para la constante \(a\). Como el eje \(y\) es ahora la mediatriz de los focos, en él, es decir en los puntos \((0, y)\), la primera ecuación de la ellipse se vuelve
+    
+    \begin{equation*}
+        \sqrt{c^{2} + y^{2}} = a,
+    \end{equation*}
+
+    que tiene soluciones \(y = \pm b\), donde \(b > 0\). Se le llama el \textcolor{blue}{semieje menor} de la elipse \(\mathcal{E}\), y es tal que
+
+    \begin{equation*}
+        b^{2} = a^{2} - c^{2}. 
+    \end{equation*}
+
+    Ahora sí, consideramos la primera ecuación de la elipse, que con \(\vb{x} = (x, y)\) y la definición de nuestros focos, se expresa
+
+    \begin{equation*}
+        \sqrt{(x - c)^{2} + y^{2}} + \sqrt{(x - c)^{2} + y^{2}}= 2a.
+    \end{equation*}
+
+    Pasamos una de las dos raíces al otro lado y elevamos al cuadrado, 
+
+    \begin{equation*}
+        a\sqrt{(x + c)^{2} + y^{2}} = a^{2} + cx.	
+    \end{equation*}
+
+    Elevando de nuevo al cuadrado, nos deshacemos de la raíz, y después, al agrupar términos, obtenemos
+
+    \begin{equation*}
+        b^{2}x^{2} + a^{2}y^{2} = a^{2}b^{2},
+    \end{equation*}
+
+    que, al dividir entre \(a^{2}b^{2}\), se escribe finalmente como
+
+    \begin{equation*}
+        \dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = 1,
+    \end{equation*}
+
+    que es la llamada \textcolor{blue}{ecuación canónica de la elipse}.
 \end{document}
