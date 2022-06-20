@@ -1,3 +1,3 @@
-# El plano euclidio
+# Cónicas
 
 Repository containing a cheatsheet template for exams
