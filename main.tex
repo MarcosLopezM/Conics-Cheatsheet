@@ -275,4 +275,41 @@
     \end{equation*}
 
     que es la llamada \textcolor{blue}{ecuación canónica de la elipse}.
+
+    \section{Hipérbolas}
+
+    La \textcolor{blue}{hipérbola} está definida como el lugar geométrico de los punts cuya diferencia (en valor absoluto) de sus distancias a dos puntos fijos \(\vb{p}\) y \(\vb{q}\), llamados focos, es constante. Entonces, una hipérbola \(\mathcal{H}\) está definida por la ecuación
+
+    \begin{equation*}
+        \abs{\textrm{d}(\vb{x}, \vb{p}) - \textrm{d}(\vb{x}, \vb{q})} = 2a,
+    \end{equation*}
+
+    donde \(a > 0\), y además \(2a < \textrm{d}(\vb{p}, \vb{q}) \eqqcolon 2c\). Si tomamos como focos a \(\vb{p} = (c, 0)\) y \(\vb{q} = (-c, 0)\), esta ecuación toma la forma
+
+    \begin{equation*}
+        \abs{\sqrt{(x - c)^{2} + y^{2}} - \sqrt{(x + c)^{2} + y^{2}}} = 2a.
+    \end{equation*}
+
+    Veremos a continuación que es equivalente a 
+
+    \begin{equation*}
+        \dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}} = 1,
+    \end{equation*}
+
+    donde \(b > 0\) está definida por \(a^{2} + b^{2} = c^{2}\). A esta última ecuación se le llama la \textcolor{blue}{ecuación canónica de la hipérbola}.	
+
+    Como las dos primera ecuaciones involucran valores absolutos, entonces tienen dos posibilidades que corresponden a las dos ramas de la hipérbola. En una de ellas la distancia a uno de los focos es mayor y en la otra se invierten los papeles. Se tienen dos posibilidades:
+
+    \begin{align*}
+        \sqrt{(x - c)^{2} + y^{2}} &= 2a + \sqrt{(x + c)^{2} + y^{2}} \\
+        \sqrt{(x + c)^{2} + y^{2}} &= 2a + \sqrt{(x - c)^{2} + y^{2}};
+    \end{align*}
+
+    la primera corresponde a la rama donde \(x < 0\) y luego volviendo a elevar al cuadrado y simplificando, se obtiene, de cualquiera de las dos ecuaciones anteriores, la ecuación 
+
+    \begin{equation*}
+        (a^{2} - c^{2})x^{2} + a^{2}y^{2} = a^{2}(a^{2} - c^{2}).
+    \end{equation*}
+
+    Y de aquí, al sustituir \(-b^{2} = a^{2} - c^{2}\), y dividir entre \(-a^{2}b^{2}\) se obtiene la ecuación canónica.
 \end{document}
