@@ -312,4 +312,39 @@
     \end{equation*}
 
     Y de aquí, al sustituir \(-b^{2} = a^{2} - c^{2}\), y dividir entre \(-a^{2}b^{2}\) se obtiene la ecuación canónica.
+
+    \section{Parábolas}
+
+    Una \textcolor{blue}{parábola} es el lugar geométrico de los puntos que equidistan de un punto \(\vb{p}\) (llamado su \textcolor{blue}{foco}) y una recta \(\ell\), llamada su \textcolor{blue}{directriz}, donde \(\vb{p} \in \ell\). Es decir, está definida por la ecuación
+
+    \begin{equation*}
+        \textrm{d}(\vb{x}, \vb{p}) = \textrm{d}(\vb{x}, \ell).
+    \end{equation*}
+
+    Tomemos un ejemplo sencillo con el foco en el eje \(y\), la directriz paralela al eje \(x\), y que además pase por el origen. Tenemos entonces \(\vb{p} = (0, c)\), donde \(c > 0\) digamos, y \(\ell \colon y = -c\); de tal manera que la parábola queda determinada por la ecuación 
+
+    \begin{equation*}
+        \sqrt{x^{2} + (y - c)^{2}} = \abs{y + c}.
+    \end{equation*}
+
+    Como ambos lados de la ecuación son positivos, esta es equivalente a la igualdad de sus cuadrados que da 
+
+    \begin{align*}
+        x^{2} + y^{2} -2cy + c^{2} &= y^{2} + 2cy + c^{2}, \\
+        x^{2} &= 4cy.        
+    \end{align*}
+
+    De tal manera que la gráfica de la función \(x^{2}\) (es decir, \(y = x^{2}\)) es una parábola con foco \((0, \frac{1}{4})\) y directriz \(y = -\frac{1}{4}\). Veremos ahora que cualquier parábola cumple ``la propiedad de ser gráfica de una función'' respecto de su directriz.
+
+    Sea \(\mathcal{P}\) la parábola con foco \(\vb{p}\) y directriz \(\ell\) (donde \(\vb{p} \in \ell\)). Dado un punto \(y_{0} \in \ell\), está claro que los puntos del plano cuyo distancia a \(\ell\) coincide con su distancia a \(y_{0}\) son precisamente los de la normal a \(\ell\) que pasa por \(y_{0}\), que llamaremos \(v_{0}\). Por otro lado, la mediatriz entre \(y_{0}\) y \(\vb{p}\), llamémosla \(\eta_{0}\), consta de los puntos cuyas distancias a \(\vb{p}\) y a \(y_{0}\) coinciden. Por lo tanto la intersección de \(\eta_{0}\) y \(v_{0}\) está en la parábola \(\mathcal{P}\), es decir, \(x_{0} = v_{0} \cap \eta_{0} \in \mathcal{P}\), pues
+
+    \begin{equation*}
+        \textrm{d}(\vb{x}_{0}, \ell) = \textrm{d}(\vb{x}_{0}, \vb{y}_{0}) = \textrm{d}(\vb{x}_{0}, \vb{p}).
+    \end{equation*}
+
+    Pero además \(\vb{x}_{0}\) es el único punto en la normal \(v_{0}\) que está en \(\mathcal{P}\). esta es ``la propiedad de la gráfica'' a la que nos referíamos. 
+
+    Podemos concluir aún más: que la mediatriz \(\eta_{0}\) es la tangente a \(\mathcal{P}\) en \(\vb{x}_{0}\). Pues para cualquier otro punto \(\vb{x} \in \eta_{0}\) se tiene que su distancia a \(\ell\) es menor que su distancia a \(\vb{y}_{0}\) que es su distancia a \(\vb{p}\) (\(\textrm{d}(\vb{x}_{0}, \ell) < \textrm{d}(\vb{x}, \vb{y}_{0}) = \textrm{d}(\vb{x}, \vb{p})\)), y entonces \(\vb{x} \notin \mathcal{P}\). De hecho, la parábola \(\mathcal{P}\) parte el plano en dos pedazos, los puntos más cerca de \(\vb{p}\) que de \(\ell\) (definidos por la desigualdad \(\textrm{d}(\vb{x}, \vb{p}) \leq \textrm{d}(\vb{x}, \ell)\)) y los que están más cerca de \(\ell\) que de \(\vb{p}\) (dados por \(\textrm{d}(\vb{x}, \ell) \leq \textrm{d}(\vb{x}, \vb{p})\) en donde está \(\eta_{0}\)), que comparten la frontera donde estas distancias coinciden. Así que \(\eta_{0}\) pasa \textcolor{blue}{tangente} a \(\mathcal{P}\) en \(\vb{0}\), pues \(\vb{x}_{0} \in \eta_{0} \cap \mathcal{P}\) y además \(\eta_{0}\) se queda en el lado de \(\mathcal{P}\).
+
+    \missingfigure[]{Insertar diagrama correspondiente a la explicación anterior que es encuentra en la página 93}
 \end{document}
