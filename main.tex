@@ -145,4 +145,78 @@
     \begin{equation*}
         \vb{x} \vdot \vb{x} - 2\vb{p} \vdot \vb{x} + \vb{p} \vdot \vb{p} = r^{2}.
     \end{equation*}
+
+    \subsection{Tangentes y polares}
+
+    Observemos primero que las líneas \textcolor{blue}{tangentes} a un círculo son las normales a los \textcolor{blue}{radios}. Efectivamente, si \(\vb{a}\) es un punto del círculo \(\mathcal{C}\) dado por la ecuación vectorial
+
+    \begin{equation*}
+        (\vb{x} - \vb{p}) \vdot (\vb{x} - \vb{p}) = r^{2},
+    \end{equation*}
+
+    entonces su tangente es la recta \(\ell\) normal a \((\vb{a} - \vb{p})\) y que pasa por \(\vb{a}\). Pues \(\vb{a}\) es el punto más cercano a \(\vb{p}\) en esta recta, de tal manera que para cualquier otro punto \(\vb{x} \in \ell\) se tiene que \(\textrm{d}(\vb{x}, \vb{p}) > r\). Como el círculo \(\mathcal{C}\) parte el plano en dos pedazos, entonces \(\ell\) está contenida en el exterior salvo por el punto \(\vb{a} \in \mathcal{C}\); esta será nuestra definición de \textcolor{blue}{tangente}.
+
+    Claramente, la recta \(\ell\) está dada por la ecuación
+
+    \begin{equation*}
+        \vb{x} \vdot (\vb{a} - \vb{p}) = \vb{a} \vdot (\vb{a} - \vb{p}).
+    \end{equation*}
+
+    Restando \(\vb{p} \vdot (\vb{a} - \vb{p})\) a ambos lados se obtiene
+
+    \begin{align*}
+        \vb{x} \vdot (\vb{a} - \vb{p}) - \vb{p} \vdot (\vb{a} - \vb{p}) &= \vb{a} \vdot (\vb{a} - \vb{p}) - \vb{p} \vdot (\vb{a} - \vb{p}),\\
+        (\vb{x} - \vb{p}) \vdot (\vb{a} - \vb{p}) &= (\vb{a} - \vb{p}) \vdot (\vb{a} - \vb{p}),\\
+        (\vb{x} - \vb{p}) \vdot (\vb{a} - \vb{p}) &= r^{2},
+    \end{align*}
+
+    pues \(\vb{a} \in \mathcal{C}\). La ecuación de la tangente se obtiene entonces al sustituir el punto en una de las dos apariciones de la variable \(\vb{x}\) en la ecuación vectorial.
+
+    Para cualquier otro punto en el plano, \(\vb{a}\) digamos, que nos sea el centro (\(\vb{a} \neq \vb{p}\)), el mismo proceso algebraico nos da la ecuación de una recta, llamada \textcolor{blue}{la polar} de \(\vb{a}\) respecto al círculo \(\mathcal{C}\), y que denotaremos con \(\ell_{\vb{a}}\); es decir, sea
+
+    \begin{equation*}
+        \ell_{\vb{a}} \colon\quad (\vb{x} - \vb{p}) \vdot (\vb{a} - \vb{p}) = r^{2}.
+    \end{equation*}
+
+    Ya hemos visto que cuando \(\vb{a} \in \mathcal{C}\), su polar \(\ell_{\vb{a}}\) es su tangente. Ahora veremos que si \(\vb{a}\) está en el interior del círculo, entonces \(\ell_{\vb{a}}\) no se intersecta con él, y que si está en el exterior, entonces lo corta, y además lo corta en los dos puntos de \(\mathcal{C}\) a los cuales se pueden trazar tangentes.
+
+    \missingfigure[]{Insertar diagrama correspondiente a la recta polar que se encuentra en la página 87}
+
+    Para esto, expresamos la ecuación de \(\ell_{\vb{a}}\) en su forma normal, 
+
+    \begin{equation*}
+        \vb{x} \vdot (\vb{a} - \vb{p}) = r^{2} + \vb{p} \vdot (\vb{a} - \vb{p}).
+    \end{equation*}
+
+    Esto indica que \(\ell_{\vb{a}}\) es perpendicular al vector qeu va de \(\vb{p}\) a \(\vb{p}\).
+
+    Ahora veamos cuál es el punto de intersección con la recta que pasa por \(\vb{p}\) y \(\vb{a}\). Parametricemos esta última recta con \(\vb{p}\) de cero y \(\vb{a}\) de uno y podemos despejar \(t\) al sustituir en la variable \(\vb{x}\) de la ecuación anterior, para obtener 
+
+    \begin{equation*}
+        t = \dfrac{r^{2}}{(\vb{a} - \vb{p}) \vdot (\vb{a} - \vb{p})} = \dfrac{r^{2}}{\textrm{d}(\vb{p}, \vb{a})^{2}}.
+    \end{equation*}
+
+    Entonces la distancia de \(\vb{p}\) a \(\ell_{\vb{a}}\) es 
+
+    \begin{equation*}
+        \textrm{d}(\vb{p}, \ell_{\vb{a}}) = t\textrm{d}(\vb{p}, \vb{a}) = \dfrac{r^{2}}{\textrm{d}(\vb{p}, \vb{a})} = \left(\dfrac{r}{\textrm{d}(\vb{p}, \vb{a})}\right)r
+    \end{equation*}
+
+    y tenemos lo primero que queríamos: si \(\textrm{d}(\vb{p}, \vb{a}) < r\) entonces \(\textrm{d}(\vb{p}, \ell_{\vb{a}}) > r\); y al revés, si \(\textrm{d}(\vb{p}, \vb{a}) > r\) entonces \(\textrm{d}(\vb{p}, \ell_{\vb{a}}) < r\). Si el punto \(\vb{a}\) está muy cerca de \(\vb{p}\), su polar está muy lejos, y al revés, sus distancias al centro \(\vb{p}\) se comportan como inversos pero ``alrededor de \(r\)''.
+
+    Supongamos ahora que \(\textrm{d}(\vb{p}, \vb{a}) > r\), y sea \(\vb{c}\) un punto en \(\ell_{\vb{a}} \cap \mathcal{C}\). Puesto que \(\vb{c} \in \ell_{\vb{a}}\), se cumple la ecuación 
+
+    \begin{equation*}
+        (\vb{c} - \vb{p}) \vdot (\vb{a} - \vb{p}) = r^{2}.
+    \end{equation*}
+
+    Pero entonces \(\vb{a}\) cumple la ecuación \(\ell_{\vb{c}}\) que es la tangente a \(\mathcal{C}\) en \(\vb{c}\); es decir, la línea de \(\vb{a}\) a \(\vb{c}\) es tangente al círculo.
+
+    Nótese que el argumento anterior es mucho más general: demuestra que para cualesquiera dos puntos \(\vb{a}\) y \(\vb{b}\) se tiene que 
+
+    \begin{equation*}
+        \vb{a} \in \ell_{\vb{b}}\quad \Leftrightarrow\quad \vb{b} \in \ell_{\vb{a}}.
+    \end{equation*}
+
+    Y los puntos del círculo son los únicos para los cuales se cumple \(\vb{a} \in \ell_{\vb{a}}\).
 \end{document}
