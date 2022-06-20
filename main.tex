@@ -385,4 +385,36 @@
     \begin{obs}
         Notemos que el círculo no apareció, ya que tiene excentricidad \(0\), lo cual no entra en la definición anterior.
     \end{obs}
+
+    Demostraremos ahora que elipses e hipérbolas se definen por la ecuación
+
+    \begin{equation*}
+        \textrm{d}(\vb{x}, \vb{p}) = \vb{e} \textrm{d}(\vb{x}, \ell),    
+    \end{equation*}
+
+    con \(\vb{e} < 1\) y \(\vb{e} > 1\) respectivamente, donde \(\vb{p}\) es uno de sus focos, y a \(\ell\) la llamaremos su \textcolor{blue}{directriz} correspondiente. La constante \(\vb{e}\) se llama la \textcolor{blue}{excentricidad} de la cónica, y ya sabemos que las de excentricidad \(1\) son las parábolas.
+
+    Consideremos la elipse canónica \(\mathcal{E}\) con centro en el origen y semiejes \(a > b\) en los ejes coordenados. Sabemos que sus focos están en \(\vb{p} = (c, 0)\) y \(\vb{q} = (-c, 0)\), donde \(c > 0\) es tal que \(b^{2} + c^{2} = a^{2}\). Sabemos además que \(\mathcal{E}\) se intersecta con el eje \(x\), que es su eje focal, en los puntos \((a, 0)\) y \((-a, 0)\).
+
+    Resulta que la directriz de \(\mathcal{E}\) correspondiente al foco \(\vb{p}\) es ortogonal al eje \(x\) y lo corta en el conjugado armónico de \(\vb{p}\) respecto a los puntos de intersección; es decir, es la línea polar a \(\vb{p}\) respecto al círculo \(\vb{x} \vdot \vb{x} = a^{2}\). Sea entonces \(\ell\) definida por la ecuación
+
+    \begin{equation*}
+        x =  \dfrac{a^{2}}{c}.
+    \end{equation*}
+
+    De los datos que tenemos podemos deducir su excentricidad, que resulta \(\vb{e} = \frac{c}{a} < 1\).
+
+    Puesto que ambos lados en la ecuación para la excentricidad son positivos, esta ecuación es equivalente a su cuadrado que en coordenadas toma la forma
+
+    \begin{equation*}
+        \left(\dfrac{a^{2} - c^{2}}{a^{2}}\right)x^{2} + y^{2} = a^{2} - c^{2}.
+    \end{equation*}
+
+    De aquí, al dividir entre \(b^{2} = a^{2} - c^{2}\) se obtiene la ecuación canónica de la elipse \(\mathcal{E}\).
+
+    Para una hipérbola \(\mathcal{H}\), de nuevo la directriz correspondiente a un foco es perpendicular al eje focal y se intersecta con el conjunto con el conjugado armónico respecto a los puntos de intersección con \(\mathcal{H}\). De tal manera que podemos tomar exactamente los mismos datos del caso anterior, y la ecuación para la excentricidad se desarrolla igual. Pero ahora tenemos que \(c > a\) (la excentricidad es mayor que \(1\), \(\vb{e} = \frac{c}{a} > 1\)) y entonces definimos \(b > 0\) tal que \(a^{2} + b^{2} = c^{2}\); así, en el último paso hay que dividir entre \(-b^{2}\) para obtener
+
+    \begin{equation*}
+        \dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}} = 1.
+    \end{equation*}
 \end{document}
